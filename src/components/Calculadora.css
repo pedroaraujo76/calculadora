@@ -13,16 +13,17 @@ button:hover{
 
 .wrapper{
     background-color: black;
-    border-radius: 1em;
-    padding: 1em;
+    border-radius: 3em;
+    padding: 0.95em;
+    margin-top: -40px;
 }
 
-.orange{
+.laranja{
     background-color: #FF9500;
     color: white;
 }
 
-.gray{
+.cinza{
     background-color: #505050;
     color: white;
 }

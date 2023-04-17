@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import "./Calculator.css";
-import Container from "@mui/material/Container";
+import React, { useState } from "react"; // State React
+import "./Calculadora.css";
+import Container from "@mui/material/Container"; // Container mui npm
 import { Box } from "@mui/system";
 
-export default function Calculator() {
+export default function Calculadora() {
   const [num, setNum] = useState(0);
   const [oldnum, setOldNum] = useState(0);
   const [operator, setOperator] = useState();
@@ -17,7 +17,7 @@ export default function Calculator() {
     }
   }
 
-  function clear() {
+  function clear() { // Limpando calculadora
     setNum(0);
   }
 
@@ -65,55 +65,55 @@ export default function Calculator() {
           <button onClick={clear}>AC</button>
           <button onClick={changeSign}>+/-</button>
           <button onClick={porcentage}>%</button>
-          <button className="orange" onClick={operatorHandler} value="/">
+          <button className="laranja" onClick={operatorHandler} value="/">
             /
           </button>
-          <button className="gray" onClick={inputNum} value={7}>
+          <button className="cinza" onClick={inputNum} value={7}>
             7
           </button>
-          <button className="gray" onClick={inputNum} value={8}>
+          <button className="cinza" onClick={inputNum} value={8}>
             8
           </button>
-          <button className="gray" onClick={inputNum} value={9}>
+          <button className="cinza" onClick={inputNum} value={9}>
             9
           </button>
-          <button className="orange" onClick={operatorHandler} value="X">
+          <button className="laranja" onClick={operatorHandler} value="X">
             X
           </button>
-          <button className="gray" onClick={inputNum} value={4}>
+          <button className="cinza" onClick={inputNum} value={4}>
             4
           </button>
-          <button className="gray" onClick={inputNum} value={5}>
+          <button className="cinza" onClick={inputNum} value={5}>
             5
           </button>
-          <button className="gray" onClick={inputNum} value={6}>
+          <button className="cinza" onClick={inputNum} value={6}>
             6
           </button>
-          <button className="orange" onClick={operatorHandler} value="-">
+          <button className="laranja" onClick={operatorHandler} value="-">
             -
           </button>
-          <button className="gray" onClick={inputNum} value={1}>
+          <button className="cinza" onClick={inputNum} value={1}>
             1
           </button>
-          <button className="gray" onClick={inputNum} value={2}>
+          <button className="cinza" onClick={inputNum} value={2}>
             2
           </button>
-          <button className="gray" onClick={inputNum} value={3}>
+          <button className="cinza" onClick={inputNum} value={3}>
             3
           </button>
-          <button className="orange" onClick={operatorHandler} value="+">
+          <button className="laranja" onClick={operatorHandler} value="+">
             +
           </button>
-          <button className="gray" onClick={inputNum} value={0}>
+          <button className="cinza" onClick={inputNum} value={0}>
             0
           </button>
-          <button className="gray" onClick={inputNum} value={"."}>
+          <button className="cinza" onClick={inputNum} value={"."}>
             ,
           </button>
-          <button className="gray" style={{ visibility: "hidden" }}>
+          <button className="cinza" style={{ visibility: "hidden" }}>
             ,
           </button>
-          <button className="orange" onClick={calculate}>
+          <button className="laranja" onClick={calculate}>
             =
           </button>
         </div>
